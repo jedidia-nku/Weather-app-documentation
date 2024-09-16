@@ -50,12 +50,12 @@ The **Weather App** is a modern web application designed to provide users with r
    - Weather icons representing conditions visually
 
 #### Example Request:
-```bash
+
 https://api.openweathermap.org/data/2.5/weather?q=London&appid={OPENWEATHERMAP_API_KEY}&units=metric
 
 ### API Response (Sample):
 
-```bash
+
 {
   "main": {
     "temp": 15.5,
@@ -125,7 +125,7 @@ The Google Maps API is used to display an interactive map showing the user’s l
 - **Next.js API Routes**: API routes in Next.js are used to proxy requests to OpenWeatherMap and Google Maps APIs. This ensures that API keys are kept secure and not exposed on the client side.
 
 Example API Route for fetching weather data:
-```js
+
 export default async function handler(req, res) {
   const { city } = req.query;
   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&units=metric`);
@@ -139,34 +139,34 @@ The app uses environment variables to store sensitive API keys.
 
 Create a `.env.local` file in the root directory of your project and add the following:
 
-```bash
+
 OPENWEATHERMAP_API_KEY = eb3722bea7fd087191effcf2ba81810a
-```bash
+
 
 ## Installation and Setup
 
 1. Clone the repository:
-```bash
+
    git clone https://github.com/jedidia-nku/weather-app.git
-```bash
+
 
 2. Navigate to the project directory:
-   ```bash
+   
    cd weather-app
-   ```bash
+   
 
 2. Install dependencies:
-   ```bash
+   
     npm install
-    ```bash
+    
 
 2. Add your API keys to .env.local file:
-   ```bash
+   
 OPENWEATHERMAP_API_KEY = eb3722bea7fd087191effcf2ba81810a
-```bash
+
 
 2. Start the development server:
-   ```bash
+   
    npm run dev
 6. Open http://localhost:3000 in your browser to view the app.
-```bash
+
