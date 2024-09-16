@@ -100,7 +100,7 @@ The Google Maps API is used to display an interactive map showing the user’s l
 - The map is embedded using the `GoogleMap` component, passing latitude and longitude coordinates.
 
 #### Example Integration:
-```jsx
+
 <GoogleMap
   center={{ lat: 51.5074, lng: -0.1278 }}
   zoom={10}
