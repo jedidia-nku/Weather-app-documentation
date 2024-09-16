@@ -132,6 +132,7 @@ export default async function handler(req, res) {
   const data = await response.json();
   res.status(200).json(data);
 }
+
 ### Environment Variables
 
 The app uses environment variables to store sensitive API keys.
@@ -140,26 +141,32 @@ Create a `.env.local` file in the root directory of your project and add the fol
 
 ```bash
 OPENWEATHERMAP_API_KEY = eb3722bea7fd087191effcf2ba81810a
+```bash
+
 ## Installation and Setup
-```
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/jedidia-nku/weather-app.git
-   
+```bash
+
 2. Navigate to the project directory:
    ```bash
    cd weather-app
+   ```bash
 
 2. Install dependencies:
    ```bash
     npm install
+    ```bash
 
 2. Add your API keys to .env.local file:
    ```bash
 OPENWEATHERMAP_API_KEY = eb3722bea7fd087191effcf2ba81810a
+```bash
 
 2. Start the development server:
    ```bash
    npm run dev
 6. Open http://localhost:3000 in your browser to view the app.
+```bash
