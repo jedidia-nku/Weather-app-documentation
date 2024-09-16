@@ -52,7 +52,7 @@ The **Weather App** is a modern web application designed to provide users with r
 #### Example Request:
 ```bash
 https://api.openweathermap.org/data/2.5/weather?q=London&appid={OPENWEATHERMAP_API_KEY}&units=metric
-```
+
 ### API Response (Sample):
 
 ```bash
@@ -80,7 +80,7 @@ https://api.openweathermap.org/data/2.5/weather?q=London&appid={OPENWEATHERMAP_A
     "lon": -0.1278
   }
 }
-```
+
 
 #### Parameters:
 - **`q`**: City name or coordinates (latitude, longitude)
@@ -139,8 +139,7 @@ The app uses environment variables to store sensitive API keys.
 Create a `.env.local` file in the root directory of your project and add the following:
 
 ```bash
-NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+OPENWEATHERMAP_API_KEY = eb3722bea7fd087191effcf2ba81810a
 ## Installation and Setup
 ```
 
@@ -158,8 +157,7 @@ NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 
 2. Add your API keys to .env.local file:
    ```bash
-    NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key
-    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+OPENWEATHERMAP_API_KEY = eb3722bea7fd087191effcf2ba81810a
 
 2. Start the development server:
    ```bash
